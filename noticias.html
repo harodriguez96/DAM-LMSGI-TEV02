@@ -1,0 +1,88 @@
+<!--
+
+    ALUMNO: Haizea Rodriguez
+    FECHA: 01-11-2023
+    MÓDULO: LMSGI
+    UD: 02
+    TAREA EVALUATIVA 02
+    AUTOEVALUACIÓN: 10 
+    DESCRIPCION: 
+    En esta actividad se pide desarrollar el sitio web diseñado en la primera tarea de evaluación.
+
+    Doc en PDF en Drive de Autoevaluacion: 
+-->
+
+<!DOCTYPE html>
+<html  lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>Noticias</title>
+        <link rel="stylesheet" href="css/hoja_estilos.css">
+    </head>
+    <body>
+        <!--Navegador-->
+        <nav class="flex-row justify-align">
+            <ul>
+                <li><a href="index.html" target="_blank">Inicio</a></li>
+                <li><a href="listadoCA.html" target="_blank">Pueblos</a></li>
+                <li><a href="noticias.html" target="_blank">Noticias</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--Main estructurado en Titulo + Cuadro de busqueda + Tabla con elementos: 
+        Nombre del pueblo, Titulo del articulo, Boton para ir al enlace de la pag web-->
+        <main class="flex-column">
+            <h2>Noticias</h2>
+            <section>
+                <label>Busqueda por Pueblo:</label><input class="box-escribir" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search">
+            </section>
+            <section>
+                <table id="myUL" class="float-right"> 
+                    <tr class="li-linea-top flex-row space-btw">
+                        <td><div class="subrayado-pueblo">Cadaqués: </div></td>
+                        <td>Los ocho pueblos españoles preferidos por los viajeros Lonely Planet</td>
+                        <td><a title="" href="https://elpais.com/elviajero/lonely-planet/2023-11-30/los-ocho-pueblos-espanoles-preferidos-por-los-viajeros-lonely-planet.html"><img class="boton-B" src="img/boton.png" alt="Boton" /></a></td>
+                    </tr>
+                    <tr class="li-linea-top flex-row space-btw">
+                        <td><div class="subrayado-pueblo">El Ejido: </div></td>
+                        <td>Pueblos más feos de España según ChatGPT</td>
+                        <td><a title="" href="https://www.elindependiente.com/tendencias/2023/08/08/estos-son-los-cinco-pueblos-mas-feos-de-espana-segun-chatgpt/"><img class="boton-B" src="img/boton.png" alt="Boton" /></a></td>
+                    </tr>
+                    <tr class="li-linea-top flex-row space-btw">
+                        <td><div class="subrayado-pueblo">Irueste: </div></td>
+                        <td>Un pueblo en Guadalajara ofrece vivienda gratis a cambio de gestionar su bar</td>
+                        <td><a title="" href="https://as.com/actualidad/sociedad/un-pueblo-en-guadalajara-ofrece-vivienda-gratis-a-cambio-de-gestionar-su-bar-n/"><img class="boton-B" src="img/boton.png" alt="Boton" /></a></td>
+                    </tr>
+                    <tr class="li-linea flex-row space-btw">
+                        <td><div class="subrayado-pueblo">Vilaoudriz: </div></td>
+                        <td>Un paseo por la minas, hornos y bosques del que fue el mánchester gallego</td>
+                        <td><a title="" href="https://viajes.nationalgeographic.com.es/a/paseo-por-minas-hornos-bosques-que-fue-manchester-gallego_19880"><img class="boton-B" src="img/boton.png" alt="Boton" /></a></td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <!--Pie de Pagina-->
+        <footer class="flex-row justify-align"><p class="flex-row justify-align footer-p"><a href="recursos.html" target="_blank">Recursos</a></p></footer>
+        <!--Funcion para la busqueda por texto en la tabla de articulos-->
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("tr");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("div")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

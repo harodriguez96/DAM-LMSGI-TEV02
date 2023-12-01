@@ -1,0 +1,295 @@
+/*
+
+    ALUMNO: Haizea Rodriguez
+    FECHA: 01-11-2023
+    MÓDULO: LMSGI
+    UD: 02
+    TAREA EVALUATIVA 02
+    AUTOEVALUACIÓN: 10 
+    DESCRIPCION: 
+    En esta actividad se pide desarrollar el sitio web diseñado en la primera tarea de evaluación.
+
+    Doc en PDF en Drive de Autoevaluacion: 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu&display=swap');
+
+.bloquedelimitar {
+    border: solid;
+}
+
+/*Propiedades Principales*/
+body {
+    background-image: url("../img/portada.jpg");
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+main {
+    margin-top:3%;
+    margin-bottom:3%;
+    min-height: 85vh;
+}
+
+/*Propiedades de Navegador*/
+nav {
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+}
+
+nav ul {
+    width: 100%;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    height: 3vh;
+    width: 10vw;
+    text-align: center;
+    background-color: #6F584A;
+    border-radius: 10px;
+}
+
+/*Propiedades de Pie de Pagina*/
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+}
+
+.footer-p{
+    height: 3vh;
+    width: 10vw;
+    background-color: #6F584A;
+    color: white;
+    border-radius: 50px;
+
+}
+
+/*Propiedades de header/titulos*/
+h1 {
+    font-size: 5.5em;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+h2 {
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Propiedades de texto*/
+p{
+    color: #6F584A;
+    ;
+}
+
+/*Propiedades de listas*/
+ul {
+    list-style: none;
+}
+
+/*Propiedades de vinculos*/
+a {
+    text-decoration:none;
+    color: white;
+}
+
+/*Propiedades de Imagen*/
+img {
+    border-radius: 10%;
+}
+
+/* Propiedades de Tabla*/
+caption, label {
+    color: #6F584A;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+th  {
+    background-color: #F29979;
+    text-align: left;
+    border-radius: 10px;
+    color:#6F584A;
+}
+
+td {
+    color:#6F584A;
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+
+/*Clases*/
+
+/*Clases de Relacion con FlexBox*/
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-align{
+    justify-content: center;
+    align-items: center;
+}
+
+.space-arnd {
+    justify-content: space-around;
+}
+
+.space-btw{
+    justify-content: space-between;
+}
+
+.justify-left{
+    display: flex;
+    align-items: flex-start;
+}
+
+.float-right{
+    float: right;
+}
+/*Ancho especifico de bloques*/
+.col-1 {
+    width: 30vw;
+}
+
+.col-2 {
+    width: 60vw;
+}
+
+/*Formato de texto*/
+.small {
+    font-size: .5em;
+    color: black;
+    width: 30vw;
+}
+
+.subrayado-pueblo {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/*Gestion de botones*/
+.boton-A {
+    height: 3vh;
+    width: 10vw;
+    color: white;
+    background-color: #F29979;
+    border: none;
+    border-radius: 50px;
+}
+
+.boton-B{
+    height: 5vh;
+    width: 5wh;
+    border: none;
+    border-radius: 50px;
+    
+}
+
+/*Gestion de cuadro para insertar texto*/
+.box-escribir {
+    height: 5vh;
+    width: 20vw;
+    outline: none;
+    border: none;
+    color: #6F584A;
+    background-color: white;
+    border-radius: 50px;
+}
+
+
+/*Lineas decorativas en la tabla de noticias*/
+.li-linea{
+    border-bottom: dotted #6F584A;
+    border-top:  dotted #6F584A;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.li-linea-top{
+    border-top: 2px dotted #6F584A;
+    background-color: white;
+    border-radius: 50px;
+}
+
+/*Hoja de recursos*/
+
+.recursos{
+    width: 30vw;
+    height: 20vh;
+    font-size: .5em;
+    color: black;
+    background-color: white;
+    border: solid #6F584A;
+    position: relative;
+    left: 35%;
+    top: 10em;
+
+}
+
+
+/*Barra de desplazamiento*/
+
+scroll-container {
+    display: block;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 20vw;
+    height: 50vh;
+}
+
+scroll-page{
+    display: block;
+}
+
+scroll-page a {
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-style: italic;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #F29979; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #6F584A; 
+  }
+

@@ -1,0 +1,104 @@
+<!--
+
+    ALUMNO: Haizea Rodriguez
+    FECHA: 01-11-2023
+    MÓDULO: LMSGI
+    UD: 02
+    TAREA EVALUATIVA 02
+    AUTOEVALUACIÓN: 10 
+    DESCRIPCION: 
+    En esta actividad se pide desarrollar el sitio web diseñado en la primera tarea de evaluación.
+
+    Doc en PDF en Drive de Autoevaluacion: 
+-->
+
+<!DOCTYPE html>
+<html  lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>Setenil de las Bodegas</title>
+        <link rel="stylesheet" href="css/hoja_estilos.css">
+    </head>
+    <body>
+        <!--Navegador-->
+        <nav class="flex-row justify-align">
+            <ul>
+                <li><a href="index.html" target="_blank">Inicio</a></li>
+                <li><a href="listadoCA.html" target="_blank">Pueblos</a></li>
+                <li><a href="noticias.html" target="_blank">Noticias</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--Main estructurado en Titulo, Imagen del Pueblo, Breve Descripcio, Tabla con datos INE, Lista con los pueblos de Andaluzia-->
+        <main class="flex-column">
+            <h2>Setenil de las Bodegas</h2>
+            <section class=" flex-row">
+                <section class="col-1">
+                    <img src="img/pueblos/setenil.jpg" width="300" height="300"/>
+                </section>
+                <section class="flex-column col-2">
+                    <p>En la serranía de Cádiz está Setenil de las Bodegas. Un pequeño pueblo de casas blancas que se caracteriza porque parte de las viviendas fueron construidas sobre el tajo del río Guadalporcún. Las rocas conviven con las casas. Esto le ha otorgado una fisionomía muy peculiar que ha hecho que fuera declarado Conjunto Histórico-Artístico en 1985. Fue un antiguo poblado almohade conquistado posteriormente por los cristianos. De la época del reinado nazarí aún conserva la fortaleza medieval (s. XIV y XV), con la Torre del homenaje y el alijibe.</p>
+                    <table>
+                        <caption>Series históricas de población desde 2020.</caption>
+                        <thead>
+                            <tr>
+                                <th>CP - Pueblo</th>
+                                <th>2022</th>
+                                <th>2021</th>
+                                <th>2020</th>   
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>11034 Setenil de las Bodegas</td>
+                                <td>2675 hab.</td>
+                                <td>2698 hab.</td>
+                                <td>2741 hab.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="flex-column justify-align">
+                    <scroll-container>
+                        <scroll-page id="">
+                            <a href="">Capileira</a>
+                        </scroll-page>
+                        <scroll-page id="">
+                            <a href="">Cazorla</a>
+                        </scroll-page>
+                        <scroll-page id="">
+                            <a href="">Conil de la Frontera</a>
+                        </scroll-page>
+                        <scroll-page id="">
+                            <a href="">Jerez de la Frontera</a>
+                        </scroll-page>
+                        <scroll-page id="">
+                            <a href="">Loja</a>
+                        </scroll-page>
+                        <scroll-page id="">
+                            <a href="">Ogijares</a>
+                        </scroll-page>
+                        <scroll-page id="">
+                            <a href="">Osuna</a>
+                        </scroll-page>
+                        <scroll-page id="">
+                            <a href="">Pampaneira</a>
+                        </scroll-page>
+                        <scroll-page id="">
+                            <a href="Setenil.html">Setenil de las Bodegas</a>
+                        </scroll-page>
+                        <scroll-page id="">
+                            <a href="">Tarifa</a>
+                        </scroll-page>
+                        <scroll-page id="">
+                            <a href="">Ubeda</a>
+                        </scroll-page>
+                    </scroll-container>
+                </section>
+            </section>
+        </main>
+        <footer class="flex-row justify-align"><p class="flex-row justify-align footer-p"><a href="recursos.html" target="_blank">Recursos</a></p></footer>
+    </body>
+</html>
